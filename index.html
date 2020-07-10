@@ -102,6 +102,9 @@
            font-weight: 700;
            margin-left: -10px;
          }
+         #title a{
+           color:#0c1b34 !important;
+         }
          #product {
            margin-left: -10px;
          }
@@ -532,7 +535,7 @@
             <span id="toggleConsole">
             <img src="./img/toggle.png" />
             </span>
-            <h1 id='title'>Inversión china en soja y carne en América del Sur (2009-2019)</h1>
+            <h1 id='title'><a href="https://dialogochino.net/en/agriculture/36342-mapping-chinese-investments-south-american-soy-and-beef/">Inversión china en soja y carne en América del Sur (2009-2019)</a></h1>
             <div class="itemWrapper" id="toggleWrapper">
                <div class="item">
                   <h2 id="product"><span id="soyTitle">SOJA</span> / <span id="beefTitle">CARNE</span></h2>
@@ -647,7 +650,7 @@
          if (/iPhone/i.test(navigator.userAgent)) {
              iphone = true;
          }else{
-           console.log(/iPhone/i.test(navigator.userAgent))
+           // console.log(/iPhone/i.test(navigator.userAgent))
          }
 
          //if Safari
@@ -1068,7 +1071,7 @@
 
                allYears = getAllYears(firstYear,finalYear);
 
-               $("#title").html(`Inversión china en soja y carne en América del Sur (${firstYear}-${finalYear})`);
+               $("#title").html(`<a href='https://dialogochino.net/en/agriculture/36342-mapping-chinese-investments-south-american-soy-and-beef/'>Inversión china en soja y carne en América del Sur (${firstYear}-${finalYear})</a>`);
 
                // console.log(allDates)
                totalMonths = calculateTotalMonths(firstDate,lastDate);
@@ -1235,7 +1238,7 @@
                var html='';
 
                for(var i=firstYear;i<=lastYear;i++){
-                 console.log(i)
+                 // console.log(i)
                  allYears.push(i);
                   html = `<option>${i}</option>`
                   var menu = document.getElementById('dropdown');
@@ -1574,7 +1577,7 @@
                 popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                     .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                     + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                    + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                    + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                     // + '<h4><b>' +local_partner_title+': </b>' + local_partner + '</h4>'
                     + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                     + '<h4><b> Sector:</b> '  + sector + '</h4>'
@@ -1587,7 +1590,7 @@
                 popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                     .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                     + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                    + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                    + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                     // + '<h4><b>' +local_partner_title+': </b>' + local_partner + '</h4>'
                     + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                     + '<h4><b> Sector:</b> '  + sector + '</h4>'
@@ -1605,7 +1608,7 @@
                 popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                     .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                     + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                    + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                    + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                     + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                     + '<h4><b> Sector:</b> '  + sector + '</h4>'
                     + '<h4><b> Tipo:</b> '  + project_type + '</h4>'
@@ -1617,7 +1620,7 @@
                 popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                     .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                     + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                    + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                    + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                     + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                     + '<h4><b> Sector:</b> '  + sector + '</h4>'
                     + '<h4><b> Tipo:</b> '  + project_type + '</h4>'
@@ -1742,7 +1745,7 @@
                popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                    .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                    + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                   + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                   + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                    + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                    + '<h4><b> Sector:</b> '  + sector + '</h4>'
                    + '<h4><b> Tipo:</b> '  + project_type + '</h4>')
@@ -1753,7 +1756,7 @@
                popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                    .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                    + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                   + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                   + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                    + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                    + '<h4><b> Sector:</b> '  + sector + '</h4>'
                    + '<h4><b> Tipo:</b> '  + project_type + '</h4>'
@@ -1769,7 +1772,7 @@
                popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                    .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                    + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                   + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                   + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                    + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                    + '<h4><b> Sector:</b> '  + sector + '</h4>'
                    + '<h4><b> Tipo:</b> '  + project_type + '</h4>'
@@ -1782,7 +1785,7 @@
                popup = new mapboxgl.Popup({closeButton: true, closeOnClick: true, className:popupClass})
                    .setHTML('<h3 class="popupTitle">' + title + '</h3>'
                    + '<h4><b> Empresa inversora: </b>' + investing_company + '</h4>'
-                   + '<h4><b> Projecto / Empresa objetivo: </b>' + local_partner + '</h4>'
+                   + '<h4><b> Entidad local: </b>' + local_partner + '</h4>'
                    + '<h4><b> Projecto: </b>' + project_description + '</h4>'
                    + '<h4><b> Sector:</b> '  + sector + '</h4>'
                    + '<h4><b> Tipo:</b> '  + project_type + '</h4>'
